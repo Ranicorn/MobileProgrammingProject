@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="org.androidtown.a20170523lab6.MainActivity">
+
+    <!--EditText to edit sentence, add sentence or show sentence from file-->
+    <EditText
+        android:layout_margin="10dp"
+        android:gravity="top"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Enter some lines of data here..."
+        android:id="@+id/editTxt"
+        android:background="#11000000"/>
+
+    <!--Write sentence in EditText in SD file-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. write sd file"
+        android:id="@+id/write"/>
+
+    <!--Clear sentence in EditText and show hint-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. clear screen"
+        android:id="@+id/clear"/>
+
+    <!--Read from SD file and show in EditText-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. read sd file"
+        android:id="@+id/read"/>
+
+    <!--Reset SD file-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. reset sd file"
+        android:id="@+id/reset"/>
+
+    <!--Close App-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. finish app"
+        android:id="@+id/finish"/>
+
+</LinearLayout>
